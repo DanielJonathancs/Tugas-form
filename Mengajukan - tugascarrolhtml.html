@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+        body {
+            background: url(tesseract.jpg);
+        }
+
+      .container {
+        margin: auto;
+        background-color: navy;
+        width: 180vh;
+        border: 2px dashed white;
+        border-radius: 20px;
+      }
+
+      .main h2 {
+        text-align: center;
+        border-bottom: 2px dashed;
+        color: white;
+        padding: 25px;
+        margin-left: 70px;
+        margin-right: 70px;
+      }
+
+      .second {
+        margin-left: 70px;
+      }
+
+      label {
+        color: white;
+        text-align: right;
+      }
+
+      .imput {
+        width: 160vh;
+      }
+
+      .input {
+        width: 160vh;
+      }
+
+      .ibnup {
+        width: 124.5vh;
+        margin-left: 30px;
+      }
+
+      .third {
+        display: flex;
+        justify-content: center;
+      }
+
+      .third button {
+        width: 100px;
+        height: 25px;
+        margin: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main"><h2>Formulir Nota Pembelian</h2></div>
+      <div class="second">
+        <label class="text">Nama Pembeli</label> <br />
+        <input type="text" class="imput" />
+
+        <br /><br />
+        <label>Alamat</label> <br />
+        <textarea name="Alamat" class="imput"></textarea>
+
+        <br /><br />
+        <label class="text">Kode Pos</label> <br />
+        <input type="number" class="imput" />
+
+        <br /><br />
+        <label class="text">Tanggal Beli</label> <br />
+        <input type="date" class="input" />
+        
+        <br><br>
+        <label class="text">Pembayaran</label> <br>
+        <input type="radio" name="pembayaran"> <label>Lunas</label>
+        <input type="radio" name="pembayaran"> <label>Belum bayar</label>
+        <input type="radio" name="pembayaran"> <label>DP</label>
+        <input type="text" name="pembayaran" placeholder="ketikan angka uang DP" class="ibnup">
+        
+        
+        <br /><br />
+        <label class="text">Jenis pembayaran</label> <br />
+        <select name="text" class="input"> 
+            <option value="tunai">tunai</option>
+            <option value="digital">digital</option>
+            <option value="credit-card">credit card</option>
+        </select>
+
+        <br> <br>
+
+        <label class="text">Menu</label> <br>
+        <input type="checkbox"> <label>Mie goreng</label> <input type="text" style="margin-left: 21vh; width: 124.4vh;"> <br> <br>
+        <input type="checkbox"> <label>Nasi goreng</label> <input type="text" style="margin-left: 20.5vh; width: 124.4vh;"> <br> <br>
+        <input type="checkbox"> <label>Jeruk</label> <input type="text" style="margin-left: 26.3vh; width: 124.4vh;"><br> <br>
+        <input type="checkbox"> <label>Teh</label> <input type="text" style="margin-left: 27.8vh; width: 124.4vh;"> <br> <br>
+        
+        <div class="third">
+            <button>Clear</button>
+            <button>Send</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</hhtml>
